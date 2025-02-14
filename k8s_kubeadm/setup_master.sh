@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#part 1
+
 # Exit on any error
 set -e
 #Setting hostname for control plane nodes
@@ -57,6 +59,8 @@ echo "Installing kubeadm, kubelet, and kubectl..."
 sudo apt-get update -y
 sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
+
+# part 2
 
 # Initialize Kubernetes cluster
 echo "Initializing Kubernetes cluster..."
